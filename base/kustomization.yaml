@@ -4,14 +4,15 @@ metadata:
   name: kustomize-main
 
 labels:
-  - pairs:
-      app: coffee-brews
-    includeSelectors: true
+- includeSelectors: true
+  pairs:
+    app: coffee-brews
 
 resources:
-  - deployment.yaml
-  - service.yaml
+- deployment.yaml
+- service.yaml
 
 images:
-  - name: patamondev/coffee-webapp
-    newTag: "latest"
+- name: patamondev/coffee-webapp
+  newName: patamondev/coffee-webapp
+  newTag: b6d246a161e9459bb2808a56b992b4c4d3cd756d
