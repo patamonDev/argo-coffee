@@ -3,14 +3,17 @@ kind: Application
 metadata:
   name: coffee-webapp-manifest
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: "https://github.com/patamonDev/argo-coffee"
-    targetRevision: HEAD
+    repoURL: https://github.com/patamonDev/argo-coffee
+    targetRevision: main
+    path: base            # adjust to match your repo layout
   destination:
+    server: https://kubernetes.default.svc
     namespace: coffee-enjoyers
-    server: 'https://kubernetes.default.svc'
   syncPolicy:
     automated:
       prune: true
