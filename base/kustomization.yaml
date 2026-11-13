@@ -13,5 +13,6 @@ resources:
 - service.yaml
 
 images:
-  - name: patamondev/coffee-webapp
-    newTag: "REPLACE_WITH_SHA"
+- name: patamondev/coffee-webapp
+  newName: patamondev/coffee-webapp
+  newTag: 44ba2c8824137a72ec8b8566385985cec542e798
