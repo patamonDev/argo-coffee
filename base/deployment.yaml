@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         deployment: prod
+        app: coffee-brews
     spec:
       securityContext:
         runAsNonRoot: true
