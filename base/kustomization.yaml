@@ -14,4 +14,4 @@ resources:
 
 images:
   - name: patamondev/coffee-webapp
-    newTag: "latest"
+    newTag: "REPLACE_WITH_SHA"
