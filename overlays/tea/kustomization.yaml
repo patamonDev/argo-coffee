@@ -1,0 +1,7 @@
+namePrefix: tea-brew
+commonLabels:
+  app: tea-brew
+  variant: tea
+
+resources:
+  - ../../base

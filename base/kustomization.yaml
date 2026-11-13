@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+metadata:
+  name: kustomize-main
+
+labels:
+  - pairs:
+      app: coffee-brews
+    includeSelectors: true
+
+resources:
+  - deployment.yaml
+  - service.yaml
+
+images:
+  - name: patamondev/coffee-webapp
+    newTag: "sha256:334ddbbc0e2f489f396605386d610b5e97a1b207051ed97d8a35139544e73c61"
