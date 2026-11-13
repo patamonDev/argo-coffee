@@ -14,4 +14,4 @@ resources:
 
 images:
   - name: patamondev/coffee-webapp
-    newTag: "sha256:334ddbbc0e2f489f396605386d610b5e97a1b207051ed97d8a35139544e73c61"
+    newTag: "latest"
