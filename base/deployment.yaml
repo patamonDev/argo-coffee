@@ -8,7 +8,6 @@ spec:
   selector:
     matchLabels:
       deployment: prod
-      brew: french-press
   template:
     metadata:
       labels:
